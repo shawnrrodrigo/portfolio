@@ -1,36 +1,42 @@
 import { useEffect, useRef } from "react";
-import "./intro.scss"
-import {init} from 'ityped';
-// import KeyboardDoubleArrowDownIcon from '@mui/icons-material/KeyboardDoubleArrowDown';
+import "./intro.scss";
+import { init } from "ityped";
+import FileDownloadOutlinedIcon from "@mui/icons-material/FileDownloadOutlined";
 
 export default function Intro() {
   const textRef = useRef();
 
-  useEffect(()=>{
-    init(textRef.current,{
+  useEffect(() => {
+    console.log(textRef);
+    init(textRef.current, {
       showCursor: false,
       backDelay: 1500,
       backSpeed: 60,
-      strings: ["Developer", "Designer", "Content Creator"]
+      strings: ["Developer", "Designer", "Photographer", "Writer"],
     });
-  },[]);
+  }, []);
 
   return (
     <div className="intro" id="intro">
-      <div className="left">
-        <div className="imgContainer">
-          <img className="image" src="/assets/shawn.png" alt=""></img>
+      <div className="wrapper">
+        <h2>Hello, I am</h2>
+        <h1>Shawn Rodrigo</h1>
+        <h3>
+          Sometimes a <span ref={textRef}></span>
+        </h3>
+
+        <div className="d-flex gap-2 mt-5">
+          <a href="#about">
+            <button type="button" class="btn btn-primary mr-2">
+              More about me
+            </button>
+          </a>
+          <button type="button" class="btn btn-outline-light">
+            <FileDownloadOutlinedIcon />
+            Download CV
+          </button>
         </div>
-      </div>
-      <div className="right">
-        <div className="wrapper">
-          <h2>Hi, there</h2>
-          <h1>Shawn Rodrigo</h1>
-          <h3>Freelance <span ref={textRef}></span></h3>
-          <button>Let's Go</button>
-        </div>
-        {/* <a href="#portfolio"><KeyboardDoubleArrowDownIcon/></a> */}
       </div>
     </div>
-  )
+  );
 }

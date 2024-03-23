@@ -7,22 +7,22 @@ export default function Topbar() {
       <div className="wrapper">
         <div className="left">
           <a href="#intro" className="heading">
-            Shawn Rodrigo
+            SHAWN RODRIGO
           </a>
         </div>
         <div className="right">
           <div className="itemContainer">
             <a href="#home">
-              <h3 className="tag">Home</h3>
+              <h3 className="tag">HOME</h3>
             </a>
             <a href="#about">
-              <h3 className="tag">About</h3>
+              <h3 className="tag">ABOUT</h3>
             </a>
             <a href="#work">
-              <h3 className="tag">Work</h3>
+              <h3 className="tag">WORK</h3>
             </a>
             <a href="#contact">
-              <h3 className="tag">Contact</h3>
+              <h3 className="tag">CONTACT</h3>
             </a>
           </div>
         </div>

@@ -1,49 +1,40 @@
 .intro {
-  background-color: white;
+  background-image: url("../../../public/assets/cover.png");
+  background-size: cover;
+  background-position: center;
+  background-color: black;
   display: flex;
-  .left {
-    flex: 1;
-    overflow: hidden;
-    .imgContainer {
-        background-color: crimson;
-      .image {
-        width: 100%;
-        height: 100%;
-        object-fit: contain;
-      }
-    }
-  }
+  align-items: center;
+  justify-content: center;
 
-  .right {
+  .wrapper {
     display: flex;
     flex-direction: column;
+    align-items: center;
     justify-content: center;
-    flex: 1;
-    background-color: crimson;
-    
-    .wrapper {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+    scroll-behavior: smooth;
 
-        h1 {
-            font-size: 60px;
-            margin: 10px o;
-            color: white;
-        }
+    h1 {
+      font-size: 60px;
+      margin: 10px 0;
+      background: -webkit-gradient(linear, left top, right bottom, from(#1d2671), to(#c33764));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
 
-        h2 {
-            font-size: 35px;
-        }
+    h2 {
+      font-size: 35px;
+      color: white;
+    }
 
-        h3 {
-            font-size: 30px;
+    h3 {
+      font-size: 30px;
+      color: white;
 
-            span {
-                font-size: inherit;
-            }
-        }
+      span {
+        font-size: inherit;
+        color: #fab62b;
+      }
     }
   }
 }
