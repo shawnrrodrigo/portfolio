@@ -1,0 +1,15 @@
+$width: 767px;
+$ipad_mini_portrait_width: 768px;
+$ipad_mini_landscape_width: 1024px;
+
+@mixin mobile {
+  @media (max-width: #{$width}) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: #{$ipad_mini_portrait_width}) and (max-width: #{$ipad_mini_landscape_width}) {
+    @content;
+  }
+}

@@ -1,3 +1,5 @@
+@import "../../global.scss";
+
 .topbar {
   background: linear-gradient(to right, #1d2671, #c33764);
   width: 100%;
@@ -8,6 +10,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  @include mobile {
+    justify-content: center;
+  }
+
+ 
 
   .wrapper {
     width: 100%;
@@ -15,11 +22,18 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    @include mobile {
+      justify-content: center;
+    }
 
     .left {
       display: flex;
       align-items: center;
       justify-content: center;
+
+      @include mobile {
+        display: none;
+      }
 
       .heading {
         color: #fab62b;
@@ -27,7 +41,11 @@
         font-weight: 400;
         text-decoration: none;
         margin-right: 40px;
+
+        
       }
+
+      
 
     }
 
@@ -39,12 +57,17 @@
 
         a {
           text-decoration: none;
+          padding: 0;
 
           .tag {
             padding-right: 30px;
             color: #fab62b;
             font-size: 20px;
             font-weight: 400;
+            margin: 0;
+            @include mobile {
+              font-size: 14px;
+            }
           }
         }
       }

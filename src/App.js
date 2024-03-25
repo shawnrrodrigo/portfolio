@@ -7,11 +7,21 @@ import "./app.scss";
 
 
 function App() {
+  const scrollDown = () => {
+    const element = document.getElementById('about');
+    element?.scrollIntoView({
+      behavior: 'smooth'
+    })
+    // window.scrollTo({
+    //   top: window.innerHeight, // You can adjust the scroll amount as needed
+    //   behavior: "smooth",
+    // });
+  };
   return (
     <div className="app">
       <Topbar/>
       <div className="section">
-        <Intro/>
+        <Intro scrollDown={scrollDown}/>
         <About/>
         <Portfolio/>
         <Contact/>
