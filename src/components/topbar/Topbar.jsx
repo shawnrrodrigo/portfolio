@@ -12,16 +12,16 @@ export default function Topbar() {
         </div>
         <div className="right">
           <div className="itemContainer">
-            <a href={process.env.PUBLIC_URL+"#home"}>
+            <a href={process.env.PUBLIC_URL+"/#home"}>
               <h3 className="tag">HOME</h3>
             </a>
-            <a href={process.env.PUBLIC_URL+"#about"}>
+            <a href={process.env.PUBLIC_URL+"/#about"}>
               <h3 className="tag">ABOUT</h3>
             </a>
-            <a href={process.env.PUBLIC_URL+"#portfolio"}>
+            <a href={process.env.PUBLIC_URL+"/#portfolio"}>
               <h3 className="tag">PORTFOLIO</h3>
             </a>
-            <a href={process.env.PUBLIC_URL+"#contact"}>
+            <a href={process.env.PUBLIC_URL+"/#contact"}>
               <h3 className="tag" style={{paddingRight: '0px'}}>CONTACT</h3>
             </a>
           </div>
