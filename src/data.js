@@ -4,7 +4,7 @@ export const data = [
     title: "iCan Mall",
     content:
       "Engineered a dynamic e-commerce platform utilizing Vue.js, boasting a fully functional frontend. Seamlessly blending user-centric design with robust functionality, this project showcases expertise in frontend development while delivering an immersive shopping experience",
-    img: "/assets/icanmall.png",
+    img:  "/assets/icanmall.png",
   },
   {
     id: 2,

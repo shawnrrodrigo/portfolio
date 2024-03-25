@@ -65,7 +65,7 @@ export default function Portfolio() {
               <h3>{item.title}</h3>
               <p>{item.content}</p>
             </div>
-            <img src={item.img} alt=""></img>
+            <img src={ process.env.PUBLIC_URL + item.img} alt=""></img>
           </div>
         ))}
       </div>

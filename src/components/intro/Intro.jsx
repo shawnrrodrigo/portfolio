@@ -35,7 +35,7 @@ export default function Intro({ scrollDown }) {
         <div className="row flex-column flex-md-row mt-5 gap-1 align-items-center">
           <div className="col-12 col-md-auto">
             <a
-              href="/assets/Shawn_Rodrigo_Resume.pdf"
+              href={process.env.PUBLIC_URL +  "/assets/Shawn_Rodrigo_Resume.pdf"}
               download="Shawn_Rodrigo_Resume.pdf"
               className="btn btn-outline-light btn-lg btn-block"
             >

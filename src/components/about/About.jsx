@@ -6,7 +6,7 @@ export default function About() {
     <div className="about" id="about">
       <div className="left">
         <div className="imgContainer">
-          <img src="/assets/shawn.png" alt="" />
+        <img src={process.env.PUBLIC_URL + '/assets/shawn.png'} alt="" />
         </div>
       </div>
       <div className="right">
