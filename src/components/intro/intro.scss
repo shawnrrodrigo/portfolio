@@ -8,7 +8,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  @include mobile{
+  @include mobilemd{
+    flex-direction: column;
+    align-items: center;
+  }
+  @include mobilexs{
     flex-direction: column;
     align-items: center;
   }
@@ -27,7 +31,11 @@
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
 
-      @include mobile{
+      @include mobilemd{
+        text-align: center;
+      }
+      @include mobilexs{
+        font-size: 40px;
         text-align: center;
       }
     }
@@ -35,13 +43,20 @@
     h2 {
       font-size: 35px;
       color: white;
+      @include mobilexs{
+        font-size: 28px;
+      }
     }
 
     h3 {
       font-size: 30px;
       color: white;
 
-      @include mobile{
+      @include mobilemd{
+        text-align: center;
+        font-size: 25px;
+      }
+      @include mobilexs{
         text-align: center;
         font-size: 25px;
       }

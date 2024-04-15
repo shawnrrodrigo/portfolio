@@ -1,3 +1,4 @@
+@import "../../global.scss";
 .contact {
   background-color: black;
   display: flex;
@@ -20,6 +21,15 @@
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       font-size: 50px;
+      @include mobilemd {
+        font-size: 30px;
+      }
+      @include mobilesm {
+        font-size: 30px;
+      }
+      @include mobilexs {
+        font-size: 30px;
+      }
     }
 
     .contact-details {
@@ -31,6 +41,15 @@
             color: #aaa;
             font-weight: 400;
             font-size: 20px;
+            @include mobilemd {
+              font-size: 14px;
+            }
+            @include mobilesm {
+              font-size: 14px;
+            }
+            @include mobilexs {
+              font-size: 14px;
+            }
 
             span {
                 margin-right: 15px;

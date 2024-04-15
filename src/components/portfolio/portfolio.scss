@@ -18,13 +18,18 @@
     );
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-size: 50px;
 
-    @include mobile {
+    @include mobilemd {
       display: none;
     }
 
     @include tablet{
+      display: none;
+    }
+    @include mobilesm{
+      display: none;
+    }
+    @include mobilexs{
       display: none;
     }
   }
@@ -44,7 +49,13 @@
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    @include mobile {
+    @include mobilemd {
+      width: 100%;
+    }
+    @include mobilesm {
+      width: 100%;
+    }
+    @include mobilexs {
       width: 100%;
     }
 
@@ -67,18 +78,53 @@
       cursor: pointer;
 
       @include tablet{
+        width: 40%;
+      }
+
+      @include mobilemd {
         width: 90%;
       }
+      @include mobilesm {
+        width: 90%;
+      }
+      @include mobilexs {
+        width: 90%;
+      }
+  
 
       .description {
         position: absolute;
         padding: 10px 10px;
         h3 {
           font-size: 20px;
+          @include mobilemd {
+            font-size: 16px;
+          }
+          @include mobilesm {
+            font-size: 16px;
+          }
+          @include mobilexs {
+            font-size: 16px;
+          }
+          @include tablet{
+            font-size: 16px;
+          }
         }
         p {
           font-size: 15px;
           font-weight: 400;
+          @include mobilemd {
+            font-size: 12px;
+          }
+          @include mobilesm {
+            font-size: 12px;
+          }
+          @include mobilexs {
+            font-size: 12px;
+          }
+          @include tablet{
+            font-size: 12px;
+          }
         }
       }
 

@@ -10,11 +10,9 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  @include mobile {
+  @include mobilemd {
     justify-content: center;
   }
-
- 
 
   .wrapper {
     width: 100%;
@@ -22,7 +20,15 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    @include mobile {
+    @include mobilemd {
+      justify-content: center;
+    }
+
+    @include mobilesm {
+      justify-content: center;
+    }
+
+    @include mobilexs {
       justify-content: center;
     }
 
@@ -31,7 +37,13 @@
       align-items: center;
       justify-content: center;
 
-      @include mobile {
+      @include mobilemd {
+        display: none;
+      }
+      @include mobilesm {
+        display: none;
+      }
+      @include mobilexs {
         display: none;
       }
 
@@ -65,7 +77,13 @@
             font-size: 20px;
             font-weight: 400;
             margin: 0;
-            @include mobile {
+            @include mobilemd {
+              font-size: 14px;
+            }
+            @include mobilesm {
+              font-size: 14px;
+            }
+            @include mobilexs {
               font-size: 14px;
             }
           }

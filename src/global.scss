@@ -1,15 +1,37 @@
-$width: 767px;
+$mobile-sm: 404px;
+$mobile-md: 425px;
+$mobile-lg: 768px;
 $ipad_mini_portrait_width: 768px;
 $ipad_mini_landscape_width: 1024px;
 
-@mixin mobile {
-  @media (max-width: #{$width}) {
+
+
+@mixin mobilexs {
+  @media (max-width: #{$mobile-sm}) {
+    @content;
+  }
+}
+
+@mixin mobilesm {
+  @media (min-width: #{$mobile-sm}) and (max-width: #{$mobile-md}) {
+    @content;
+  }
+}
+
+@mixin mobilemd {
+  @media (min-width: #{$mobile-md}) and (max-width: #{$mobile-lg}) {
+    @content;
+  }
+}
+
+@mixin mobilelg {
+  @media (min-width: #{$mobile-lg}) and (max-width: #{$ipad_mini_landscape_width}) {
     @content;
   }
 }
 
 @mixin tablet {
-  @media (min-width: #{$ipad_mini_portrait_width}) and (max-width: #{$ipad_mini_landscape_width}) {
+  @media (min-width: #{$mobile-lg}) and (max-width: #{$ipad_mini_landscape_width}) {
     @content;
   }
 }
