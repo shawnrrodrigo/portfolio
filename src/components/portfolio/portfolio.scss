@@ -5,7 +5,18 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 20px;
+  padding-top: 20px;
+  overflow-y: scroll;
+
+  ::-webkit-scrollbar {
+    width: 5px;
+  }
+  ::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
+  }
+  ::-webkit-scrollbar-thumb {
+    background-color: rgb(201, 199, 199);
+  }
 
   h1 {
     font-size: 50px;
@@ -24,13 +35,13 @@
       display: none;
     }
 
-    @include tablet{
+    @include tablet {
       display: none;
     }
-    @include mobilesm{
+    @include mobilesm {
       display: none;
     }
-    @include mobilexs{
+    @include mobilexs {
       display: none;
     }
   }
@@ -60,7 +71,7 @@
       width: 100%;
     }
 
-    @include tablet{
+    @include tablet {
       width: 100%;
     }
 
@@ -78,7 +89,7 @@
       transition: 0.5s ease;
       cursor: pointer;
 
-      @include tablet{
+      @include tablet {
         width: 40%;
       }
 
@@ -91,7 +102,6 @@
       @include mobilexs {
         width: 90%;
       }
-  
 
       .description {
         position: absolute;
@@ -107,7 +117,7 @@
           @include mobilexs {
             font-size: 16px;
           }
-          @include tablet{
+          @include tablet {
             font-size: 16px;
           }
         }
@@ -123,7 +133,7 @@
           @include mobilexs {
             font-size: 12px;
           }
-          @include tablet{
+          @include tablet {
             font-size: 12px;
           }
         }
